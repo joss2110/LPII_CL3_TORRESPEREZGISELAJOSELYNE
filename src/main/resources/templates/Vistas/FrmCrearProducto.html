@@ -4,20 +4,20 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<body>
 		
-		<h1 align="center">Registrar Producto</h1>
+		<h1 class="text-center m-5">Registrar Producto</h1>
 		
 		
 		
 		<form th:action="@{/Vistas/GuardarProducto}" method="post" th:object="${regproducto}">
 		<table align="center">
 			<input type="hidden" th:field="*{idproductocl3}">
-			<tr><td>nombre</td><td><input type="text" th:field="*{nombrecl3}"></td></tr>
+			<tr><td>nombre</td><td><input type="text" th:field="*{nombrecl3}"></td></trclass="text-center m-3">
 			<tr><td>precio de venta</td><td><input type="number" th:field="*{precioventacl3}"></td></tr>
 			<tr><td>precio de compra</td><td><input type="text" th:field="*{preciocompracl3}"></td></tr>
 			<tr><td>estado</td><td><input type="text" th:field="*{estadocl3}"></td></tr>
 			<tr><td>descripcion</td><td><input type="text" th:field="*{descripcl3}"></td></tr>
 			<tr><td  colspan="2" align="center">
-				<input type="submit" value="registrar"></td>
+				<input type="submit" value="registrar" class="btn btn-primary m-4"></td>
 				</tr>
 		</table>			
 		</form>
